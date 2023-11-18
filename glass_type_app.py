@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 
 # Loading the dataset.
-@st.cache_data()
+@st.cache()
 def load_data():
     file_path = "glass-types.csv"
     df = pd.read_csv(file_path, header = None)
